@@ -45,7 +45,7 @@
             this.panel1.Controls.Add(this.Search);
             this.panel1.Controls.Add(this.Quit);
             this.panel1.Location = new System.Drawing.Point(187, 78);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(677, 281);
             this.panel1.TabIndex = 18;
@@ -58,7 +58,7 @@
             this.textBoxMainForm.Cursor = System.Windows.Forms.Cursors.Default;
             this.textBoxMainForm.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxMainForm.Location = new System.Drawing.Point(43, 23);
-            this.textBoxMainForm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxMainForm.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxMainForm.Name = "textBoxMainForm";
             this.textBoxMainForm.ReadOnly = true;
             this.textBoxMainForm.Size = new System.Drawing.Size(583, 39);
@@ -74,7 +74,7 @@
             this.Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Search.ForeColor = System.Drawing.Color.ForestGreen;
             this.Search.Location = new System.Drawing.Point(172, 70);
-            this.Search.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Search.Margin = new System.Windows.Forms.Padding(4);
             this.Search.Name = "Search";
             this.Search.Size = new System.Drawing.Size(319, 49);
             this.Search.TabIndex = 15;
@@ -90,7 +90,7 @@
             this.Quit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Quit.ForeColor = System.Drawing.Color.Red;
             this.Quit.Location = new System.Drawing.Point(172, 127);
-            this.Quit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Quit.Margin = new System.Windows.Forms.Padding(4);
             this.Quit.Name = "Quit";
             this.Quit.Size = new System.Drawing.Size(319, 49);
             this.Quit.TabIndex = 13;
@@ -105,9 +105,10 @@
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "GuestMainMenuForm";
             this.Text = "GuestMainMenuForm";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CloseApplicationButton_Click);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

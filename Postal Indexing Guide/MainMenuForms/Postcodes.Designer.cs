@@ -68,9 +68,10 @@
             postcodeIDLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             postcodeIDLabel.AutoSize = true;
             postcodeIDLabel.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            postcodeIDLabel.Location = new System.Drawing.Point(57, 29);
+            postcodeIDLabel.Location = new System.Drawing.Point(76, 36);
+            postcodeIDLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             postcodeIDLabel.Name = "postcodeIDLabel";
-            postcodeIDLabel.Size = new System.Drawing.Size(217, 42);
+            postcodeIDLabel.Size = new System.Drawing.Size(281, 53);
             postcodeIDLabel.TabIndex = 1;
             postcodeIDLabel.Text = "Postcode ID:";
             // 
@@ -79,9 +80,10 @@
             postcodeLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             postcodeLabel.AutoSize = true;
             postcodeLabel.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            postcodeLabel.Location = new System.Drawing.Point(106, 85);
+            postcodeLabel.Location = new System.Drawing.Point(141, 105);
+            postcodeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             postcodeLabel.Name = "postcodeLabel";
-            postcodeLabel.Size = new System.Drawing.Size(168, 42);
+            postcodeLabel.Size = new System.Drawing.Size(217, 53);
             postcodeLabel.TabIndex = 3;
             postcodeLabel.Text = "Postcode:";
             // 
@@ -117,6 +119,7 @@
             this.postalCodesBindingNavigator.BindingSource = this.postalCodesBindingSource;
             this.postalCodesBindingNavigator.CountItem = this.bindingNavigatorCountItem;
             this.postalCodesBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.postalCodesBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.postalCodesBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
@@ -137,7 +140,7 @@
             this.postalCodesBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.postalCodesBindingNavigator.Name = "postalCodesBindingNavigator";
             this.postalCodesBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.postalCodesBindingNavigator.Size = new System.Drawing.Size(800, 35);
+            this.postalCodesBindingNavigator.Size = new System.Drawing.Size(1067, 42);
             this.postalCodesBindingNavigator.TabIndex = 0;
             this.postalCodesBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -147,14 +150,14 @@
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 32);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 39);
             this.bindingNavigatorAddNewItem.Text = "Добавить";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(89, 32);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(110, 39);
             this.bindingNavigatorCountItem.Text = "для {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
             // 
@@ -164,7 +167,7 @@
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 32);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 39);
             this.bindingNavigatorDeleteItem.Text = "Удалить";
             // 
             // bindingNavigatorMoveFirstItem
@@ -173,7 +176,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 32);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 39);
             this.bindingNavigatorMoveFirstItem.Text = "Переместить в начало";
             // 
             // bindingNavigatorMovePreviousItem
@@ -182,13 +185,13 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 32);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 39);
             this.bindingNavigatorMovePreviousItem.Text = "Переместить назад";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 35);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 42);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -196,14 +199,14 @@
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 35);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(65, 42);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
             // 
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 35);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 42);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -211,7 +214,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 32);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 39);
             this.bindingNavigatorMoveNextItem.Text = "Переместить вперед";
             // 
             // bindingNavigatorMoveLastItem
@@ -220,20 +223,20 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 32);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 39);
             this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 35);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 42);
             // 
             // postalCodesBindingNavigatorSaveItem
             // 
             this.postalCodesBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.postalCodesBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("postalCodesBindingNavigatorSaveItem.Image")));
             this.postalCodesBindingNavigatorSaveItem.Name = "postalCodesBindingNavigatorSaveItem";
-            this.postalCodesBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 32);
+            this.postalCodesBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 39);
             this.postalCodesBindingNavigatorSaveItem.Text = "Сохранить данные";
             this.postalCodesBindingNavigatorSaveItem.Click += new System.EventHandler(this.postalCodesBindingNavigatorSaveItem_Click);
             // 
@@ -243,9 +246,10 @@
             this.postcodeIDTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.postcodeIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.postalCodesBindingSource, "PostcodeID", true));
             this.postcodeIDTextBox.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.postcodeIDTextBox.Location = new System.Drawing.Point(280, 21);
+            this.postcodeIDTextBox.Location = new System.Drawing.Point(373, 26);
+            this.postcodeIDTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.postcodeIDTextBox.Name = "postcodeIDTextBox";
-            this.postcodeIDTextBox.Size = new System.Drawing.Size(310, 50);
+            this.postcodeIDTextBox.Size = new System.Drawing.Size(413, 61);
             this.postcodeIDTextBox.TabIndex = 2;
             this.postcodeIDTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -255,9 +259,10 @@
             this.postcodeTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.postcodeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.postalCodesBindingSource, "Postcode", true));
             this.postcodeTextBox.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.postcodeTextBox.Location = new System.Drawing.Point(280, 77);
+            this.postcodeTextBox.Location = new System.Drawing.Point(373, 95);
+            this.postcodeTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.postcodeTextBox.Name = "postcodeTextBox";
-            this.postcodeTextBox.Size = new System.Drawing.Size(310, 50);
+            this.postcodeTextBox.Size = new System.Drawing.Size(413, 61);
             this.postcodeTextBox.TabIndex = 4;
             this.postcodeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -266,11 +271,12 @@
             this.Back.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Back.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.Back.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Back.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Back.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Back.ForeColor = System.Drawing.Color.DarkGreen;
-            this.Back.Location = new System.Drawing.Point(64, 153);
+            this.Back.Location = new System.Drawing.Point(85, 188);
+            this.Back.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Back.Name = "Back";
-            this.Back.Size = new System.Drawing.Size(239, 40);
+            this.Back.Size = new System.Drawing.Size(319, 49);
             this.Back.TabIndex = 20;
             this.Back.Text = "Back to the menu";
             this.Back.UseVisualStyleBackColor = false;
@@ -281,11 +287,12 @@
             this.Quit.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Quit.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.Quit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Quit.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Quit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Quit.ForeColor = System.Drawing.Color.Red;
-            this.Quit.Location = new System.Drawing.Point(351, 153);
+            this.Quit.Location = new System.Drawing.Point(468, 188);
+            this.Quit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Quit.Name = "Quit";
-            this.Quit.Size = new System.Drawing.Size(239, 40);
+            this.Quit.Size = new System.Drawing.Size(319, 49);
             this.Quit.TabIndex = 21;
             this.Quit.Text = "Quit";
             this.Quit.UseVisualStyleBackColor = false;
@@ -302,21 +309,24 @@
             this.panel1.Controls.Add(this.Quit);
             this.panel1.Controls.Add(postcodeLabel);
             this.panel1.Controls.Add(this.postcodeIDTextBox);
-            this.panel1.Location = new System.Drawing.Point(89, 73);
+            this.panel1.Location = new System.Drawing.Point(119, 90);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(643, 237);
+            this.panel1.Size = new System.Drawing.Size(857, 292);
             this.panel1.TabIndex = 22;
             // 
             // Postcodes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.postalCodesBindingNavigator);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Postcodes";
             this.Text = "Postcodes";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Postcodes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.postalIndexingGuide_DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.postalCodesBindingSource)).EndInit();

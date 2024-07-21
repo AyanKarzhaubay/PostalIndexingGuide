@@ -110,7 +110,7 @@
             this.Quit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Quit.ForeColor = System.Drawing.Color.Red;
             this.Quit.Location = new System.Drawing.Point(463, 249);
-            this.Quit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Quit.Margin = new System.Windows.Forms.Padding(4);
             this.Quit.Name = "Quit";
             this.Quit.Size = new System.Drawing.Size(319, 49);
             this.Quit.TabIndex = 17;
@@ -126,7 +126,7 @@
             this.Back.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Back.ForeColor = System.Drawing.Color.DarkGreen;
             this.Back.Location = new System.Drawing.Point(75, 249);
-            this.Back.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Back.Margin = new System.Windows.Forms.Padding(4);
             this.Back.Name = "Back";
             this.Back.Size = new System.Drawing.Size(319, 49);
             this.Back.TabIndex = 16;
@@ -294,7 +294,7 @@
             this.regionIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.regionsBindingSource, "RegionID", true));
             this.regionIDTextBox.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.regionIDTextBox.Location = new System.Drawing.Point(368, 21);
-            this.regionIDTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.regionIDTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.regionIDTextBox.Name = "regionIDTextBox";
             this.regionIDTextBox.Size = new System.Drawing.Size(413, 61);
             this.regionIDTextBox.TabIndex = 19;
@@ -307,7 +307,7 @@
             this.nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.regionsBindingSource, "Name", true));
             this.nameTextBox.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.nameTextBox.Location = new System.Drawing.Point(368, 90);
-            this.nameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(413, 61);
             this.nameTextBox.TabIndex = 21;
@@ -320,7 +320,7 @@
             this.republicIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.regionsBindingSource, "RepublicID", true));
             this.republicIDTextBox.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.republicIDTextBox.Location = new System.Drawing.Point(368, 159);
-            this.republicIDTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.republicIDTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.republicIDTextBox.Name = "republicIDTextBox";
             this.republicIDTextBox.Size = new System.Drawing.Size(413, 61);
             this.republicIDTextBox.TabIndex = 23;
@@ -340,7 +340,7 @@
             this.panel1.Controls.Add(this.nameTextBox);
             this.panel1.Controls.Add(republicIDLabel);
             this.panel1.Location = new System.Drawing.Point(105, 70);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(851, 375);
             this.panel1.TabIndex = 24;
@@ -353,9 +353,10 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.regionsBindingNavigator);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Regions";
             this.Text = "Regions";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CloseApplicationButton_Click);
             this.Load += new System.EventHandler(this.Regions_Load);
             ((System.ComponentModel.ISupportInitialize)(this.postalIndexingGuide_DataSet)).EndInit();
